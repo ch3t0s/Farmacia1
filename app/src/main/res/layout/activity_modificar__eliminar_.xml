@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Modificar_Eliminar_Activity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp">
+    <EditText
+        android:id="@+id/Idtxt"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="Id"/>
+
+        <Button
+            android:id="@+id/btnBuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar"
+            android:layout_marginLeft="40dp"
+            android:onClick="onclick3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre:"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:id="@+id/Nombretxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Nombre Medicamento"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cantidad:"
+            android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/Cantidadtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Cantidad"
+        android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Precio:"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/preciotxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Precio"
+        android:layout_marginLeft="40dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha de Vencimiento:"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/fechatxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Fecha Vencimiento"
+        android:layout_marginLeft="30dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/Eliminarbtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:background="@android:color/holo_green_dark"
+        android:onClick="onclick3"/>
+
+        <Button
+            android:id="@+id/Actualizarbtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Actualizar"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="50dp"
+            android:background="@android:color/holo_green_dark"
+            android:onClick="onclick3"/>
+
+    </LinearLayout>
+</LinearLayout>
